@@ -1,6 +1,6 @@
 'use strict';
 
-exports.respond = function(req, res) {
+exports.convertDate = function(req, res) {
 	let strftime = require('strftime');
 	let date = req.params.date;
 	let dateAsNumber = Number(date + '000');
@@ -17,4 +17,8 @@ exports.respond = function(req, res) {
 	} else {
 		res.send({'unix': null, 'natural': null});
 	}
+};
+
+exports.index = function(req, res) {
+	res.render('index');
 };

@@ -2,5 +2,6 @@
 
 module.exports = function(app) {
 	let indexCtrl = require('./index.controller');
-	app.get('/:date', indexCtrl.respond);
+	app.get('/', indexCtrl.index);
+	app.get('/:date', indexCtrl.convertDate);
 };
