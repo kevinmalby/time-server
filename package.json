@@ -4,6 +4,7 @@
   "description": "Time server for the Free Code Camp backend project",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "debug": "node --debug app.js & node-inspector"
   },
   "repository": {
